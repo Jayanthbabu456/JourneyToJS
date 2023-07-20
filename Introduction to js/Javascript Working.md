@@ -6,14 +6,14 @@ It has two components in it.
 
 Execution Context looks like.
 
-![codesnippet1](./codesnippet1.png)
+![codesnippet1](./assets/codesnippet1.png)
 
 ### 1.Memory Component
 
 In this Memory Component all the variables and functions are stored as `key value pairs`.
 This Memory Component is also called as `Variable Environment`.
 
-![codesnippet1](./codesnippet2.png)
+![codesnippet1](./assets/codesnippet2.png)
 
 ### 2.Code Component
 
@@ -51,7 +51,7 @@ At the very beginning, the JavaScript engine executes the entire source code, cr
 
 ## Creation Phase
 
-![codesnippet1](./codesnippet3.png)
+![codesnippet1](./assets/codesnippet3.png)
 
 ## Execution Phase
 
@@ -61,7 +61,7 @@ Then we get to the 'square' function. As the function has been allocated in memo
 
 ## Creation Phase for square2
 
-![codesnippet1](./codesnippet4.png)
+![codesnippet1](./assets/codesnippet4.png)
 
 ## Execution Phase for square2
 
@@ -69,21 +69,21 @@ Again it runs the entire function of square line by line from top to bottom.As s
 
 Once the calculation is done, it assigns the value of square in the 'ans' variable that was undefined before.
 
-![codesnippet1](./codesnippet5.png)
+![codesnippet1](./assets/codesnippet5.png)
 
 As we can see, the values are assigned in the memory component after executing the code line by line, i.e. number: 2, res: 4, square2: 4.
 
 After the return statement of the invoked function, the returned value is assigned in place of undefined in the memory allocation of the previous execution context.
 
-![codesnippet1](./codesnippet6.png)
+![codesnippet1](./assets/codesnippet6.png)
 
 After returning the value, the new execution context (square2) gets completely deleted. Whenever the execution encounters the return statement, It gives the control back to the execution context where the function was invoked.
 
-![codesnippet1](./codesnippet7.png)
+![codesnippet1](./assets/codesnippet7.png)
 
 ## Creation Phase for square4
 
-![codesnippet1](./codesnippet8.png)
+![codesnippet1](./assets/codesnippet8.png)
 
 ## Execution Phase for square4
 
@@ -91,21 +91,21 @@ Again it runs the entire function of square line by line from top to bottom.As s
 
 Once the calculation is done, it assigns the value of square in the 'ans' variable that was undefined before.
 
-![codesnippet1](./codesnippet9.png)
+![codesnippet1](./assets/codesnippet9.png)
 
 As we can see, the values are assigned in the memory component after executing the code line by line, i.e. number: 4, res: 16, square4: 16.
 
 After the return statement of the invoked function, the returned value is assigned in place of undefined in the memory allocation of the previous execution context.
 
-![codesnippet1](./codesnippet10.png)
+![codesnippet1](./assets/codesnippet10.png)
 
 After returning the value, the new execution context (square4) gets completely deleted. Whenever the execution encounters the return statement, It gives the control back to the execution context where the function was invoked.
 
-![codesnippet1](./codesnippet11.png)
+![codesnippet1](./assets/codesnippet11.png)
 
 Now the program is finished,there is nothing to execute.Now the whole `Global Execution Context` `deletes`.
 
-![codesnippet1](./codesnippet12.png)
+![codesnippet1](./assets/codesnippet12.png)
 
 ### What is the Call Stack?
 
@@ -119,4 +119,4 @@ Once execution of each function is done, it will be removed from the call stack.
 
 Let's see the call stack for above example:
 
-![codesnippet1](./callstack.png)
+![codesnippet1](./assets/callstack.png)
