@@ -176,15 +176,15 @@ JavaScript operators are `symbols` or `special characters` that allow you to per
 
    Used to perform bitwise operations on integer values.
 
-   | Operators | Name                         | Example    |
-   | --------- | ---------------------------- | ---------- | --- | --- |
-   | `&`       | Bitwise AND                  | `x & y`    |
-   | `         | `                            | Bitwise OR | `x  | y`  |
-   | `^`       | Bitwise XOR                  | `x ^ y`    |
-   | `~`       | Bitwise NOT                  | `~x`       |
-   | `<<`      | Left shift                   | `x << y`   |
-   | `>>`      | Sign-propagating right shift | `x >> y`   |
-   | `>>>`     | Zero-fill right shift        | `x >>> y`  |
+   | Operators | Name                         | Example   |
+   | --------- | ---------------------------- | --------- |
+   | `&`       | Bitwise AND                  | `x & y`   |
+   | `l`       | Bitwise OR                   | `x l y`   |
+   | `^`       | Bitwise XOR                  | `x ^ y`   |
+   | `~`       | Bitwise NOT                  | `~x`      |
+   | `<<`      | Left shift                   | `x << y`  |
+   | `>>`      | Sign-propagating right shift | `x >> y`  |
+   | `>>>`     | Zero-fill right shift        | `x >>> y` |
 
    - Examples:
 
@@ -198,8 +198,7 @@ JavaScript operators are `symbols` or `special characters` that allow you to per
      console.log(~a); // Output: -6 (Bitwise NOT: ~0101 = -(0110 + 1) = -0111 = -6)
      console.log(a << 1); // Output: 10 (Left shift: 0101 << 1 = 1010)
      console.log(b >> 1); // Output: 1 (Right shift: 0011 >> 1 = 0001)
-     console.log(b <<< 1); // Output: 1 (Right shift: 0011 >> 1 = 0001)
-
+     console.log(b >>> 1); // Output: 1 (Right shift: 0011 >> 1 = 0001)
      ```
 
 6. JavaScript Ternary Operator:
@@ -218,8 +217,8 @@ JavaScript operators are `symbols` or `special characters` that allow you to per
    - Examples:
 
      ```javascript
-     let num = 42;
-     let name = "John";
+     let num = 21;
+     let name = "Jayanth";
      let isActive = true;
 
      console.log(typeof num); // Output: "number"
