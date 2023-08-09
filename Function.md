@@ -67,4 +67,4 @@ let addNumbers = (a, b) => a + b;
 - A `parameter` is a variable in a function definition. It is a placeholder and hence does not have a concrete value.
 - An `argument` is a value passed during function invocation.
 
-![SS](./234817199-dbe5412f-15e9-4f9f-9d59-d80fe5ab00b1.png)
+![SS](./Function.png)
