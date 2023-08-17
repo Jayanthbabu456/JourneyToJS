@@ -3,6 +3,8 @@
 - JavaScript `object` is a non-primitive data-type that allows you to store multiple collections of data in `key-value pairs`.
 - Each `key-value pair` is called a `property` .
 
+  ![Object](./Object.png)
+
 - The key of a property can be a string. And the value of a property can be any value, e.g., a string, a number, an array, and even a function.
 - Example :
 
